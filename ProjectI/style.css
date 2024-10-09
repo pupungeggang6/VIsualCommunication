@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 21cm;
+  min-height: 29.7cm;
+  padding: 1.5cm 1.5cm 2cm 1.5cm;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
+
+#Full {
+    width: 21cm;
+    height: 29.7cm;
+    left: 0cm;
+    top: 0cm;
+    border: 2px solid black;
+}
+
+#Title {
+    position: absolute;
+    width: 21cm;
+    height: 3cm;
+}
+
+#TitleText {
+    position: absolute;
+    width: 21cm;
+    height: 3cm;
+    font-family: "Source Code Pro";
+    font-weight: bold;
+    font-size: 48px;
+
+    text-align: center;
+    line-height: 3cm;
+}
+
+#Graph {
+    position: absolute;
+    top: 3cm;
+    width: 21cm;
+    height: 20.7cm;
+    
+}
+
+#GraphLeft {
+    border: 2px solid red;
+    position: absolute;
+    left: 0cm;
+    top: 0cm;
+    width: 9cm;
+    height: 20.7cm;
+}
+
+#GraphCenter {
+    position: absolute;
+    left: 9cm;
+    top: 0cm;
+    width: 3cm;
+    height: 20.7cm;
+}
+
+#GraphCenterLine {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 20px;
+    height: 20.7cm;
+    background-color: #000000;
+}
+
+#GraphDate {
+    position: absolute;
+    border: 2px solid black;
+    width: 3cm;
+    height: 20.7cm;
+}
+
+.DateElement {
+    border: 8px solid black;
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 100px;
+    height: 60px;
+
+    background-color: #ffffff;
+    
+    font-family: "Source Code Pro";
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#GraphRight {
+    position: absolute;
+    left: 12cm;
+    top: 0cm;
+    border: 2px solid green;
+    width: 9cm;
+    height: 20.7cm;
+}
+
+.Description {
+    font-family: "Roboto";
+    font-size: 14px;
+}

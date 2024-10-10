@@ -1,0 +1,15 @@
+,Lines Inserted,Lines Deleted,Num of Todolist,Achieved Todolist,Achievement Ratio,Progress,Notes
+09-23,53,0,3,0,0,,Started project.
+09-24,257,0,3,0,0,,Start screen layout.
+09-25,151,0,20,0,0,,Reset project.
+09-26,347,4,21,4,19.04761905,,Program structure.
+09-27,246,13,26,4,15.38461538,,Field movement.
+09-28,153,22,27,4,14.81481481,,"Save function, attending school festival"
+09-29,64,6,27,4,14.81481481,,Fatigue
+09-30,217,32,27,4,14.81481481,,"Start page, card drawing."
+10-01,64,6,27,4,14.81481481,,"Card drawing, displaying card."
+10-02,210,39,33,6,18.18181818,,"Card drawing updated, displaying info updated."
+10-03,78,10,39,8,20.51282051,,Adventure tab drawing.
+10-04,239,47,39,8,20.51282051,,Info page.
+10-05,308,62,40,21,52.5,,"Field appearance, info page, save/load."
+10-06,183,16,40,25,62.5,,"Game field appearance, game card handle."

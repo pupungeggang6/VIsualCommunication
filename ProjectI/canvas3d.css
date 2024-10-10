@@ -1,0 +1,27 @@
+#DivCanvasGraph {
+    position: absolute;
+    left: 0cm;
+    top: 0cm;
+    width: 29.7cm;
+    height: 20.9cm;
+}
+
+#Canvas3DGraph {
+    position: absolute;
+    border: 2px solid black;
+    width: 24cm;
+    height: 18cm;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#CanvasLineGraph {
+    position: absolute;
+    border: 2px solid black;
+    width: 24cm;
+    height: 18cm;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

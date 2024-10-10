@@ -1,6 +1,6 @@
 @media print {
     @page {
-        size: 21cm 29.7cm;
+        size: 29.7cm 20.9cm;
         margin: 0;
         padding: 0;
     }
@@ -8,8 +8,8 @@
     body {
         left: 0cm;
         top: 0cm;
-        width: 21cm;
-        height: 29.7cm;
+        width: 29.7cm;
+        height: 20.9cm;
         margin-left: 0;
         margin-top: 0;
         padding-left: 0;
@@ -20,4 +20,13 @@
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
     }
+}
+
+#Full {
+    position: absolute;
+    left: 0cm;
+    top: 0cm;
+    width: 29.7cm;
+    height: 20.9cm;
+    background-color: #EEEEEE;
 }

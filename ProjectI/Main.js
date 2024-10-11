@@ -15,6 +15,8 @@ function main() {
         canvas = document.querySelector('#Canvas3DGraph')
         context = canvas.getContext('2d')
         graphSVG = document.querySelector('#CanvasLineGraph')
+
+        requestAnimationFrame(draw3DGraph)
     }).catch(() => {
         console.log('Failed')
     })

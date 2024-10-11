@@ -1,0 +1,23 @@
+#DivFloatingText {
+    position: absolute;
+    left: 0cm;
+    top: 0cm;
+    width: 29.7cm;
+    height: 21cm;
+}
+
+#FloatingTextBox {
+    position: absolute;
+    width: 184px;
+    height: 37px;
+    font-family: 'Source Code Pro';
+    font-size: 16px;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+}
+
+#Summary {
+    position: absolute;
+}

@@ -18,6 +18,11 @@ const UI = {
         faceLeft : [],
         faceRight : [],
     },
+
+    textBox : {
+        size : [200, 45],
+        
+    }
 }
 
 const color = {

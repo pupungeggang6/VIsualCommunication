@@ -5,8 +5,10 @@ function draw3DGraph() {
     drawGraph('Canvas3DGraphDelete', 'Deleted', color.deletedMin, color.deletedMax)
 
     valueConnectLines.innerHTML = ''
-    drawBox([[400, 172], [472, 100], [672, 100]])
-    drawBox([[815, 435], [850, 400], [1052, 400]])
+    drawBox([[400, 172], [472, 100], [572, 100]], [100, 75, 80], 'Right', 'All day working, good condition.')
+    drawBox([[269, 305], [204, 240], [200, 240]], [100, 75, 80], 'Left', 'Started Project.')
+    drawBox([[815, 435], [850, 400], [952, 400]], [340, 75, 90], 'Right', 'Changed data format, displaying function.')
+    drawBox([[634, 339], [673, 300], [773, 300]], [340, 75, 90], 'Right', 'Started Project.')
 }
 
 function drawGraph(id, aspect, colorMin, colorMax) {
@@ -82,11 +84,21 @@ function drawPolygon(context, points, color) {
     context.fill()
 }
 
-function drawBox(lines) {
+function drawBox(lines, color, direction, tag) {
     for (let i = 0; i < lines.length - 1; i++) {
         valueConnectLines.innerHTML += `<line x1="${lines[i][0]}" y1="${lines[i][1]}" x2="${lines[i + 1][0]}" y2="${lines[i + 1][1]}" style="stroke:black;stroke-width:2"/>`
     }
 
     valueConnectLines.innerHTML += `<circle cx="${lines[0][0]}" cy="${lines[0][1]}" r="8" fill="Black"/>`
     valueConnectLines.innerHTML += `<circle cx="${lines[0][0]}" cy="${lines[0][1]}" r="4" fill="White"/>`
+
+    if (direction === 'Left') {
+        valueConnectLines.innerHTML += `<rect x="${lines[lines.length - 1][0] - 160}" y="${lines[lines.length - 1][1] - 20}" width="160" height="40" rx="20" fill="hsl(${color[0]} ${color[1]}% ${color[2]}%)"/>`
+        valueConnectLines.innerHTML += `<text x="${lines[lines.length - 1][0] - 160 + 4}" y="${lines[lines.length - 1][1] + 4}" fill=
+    "Black" font-family="Source Code Pro" font-size="12 ">${tag}<text/>`
+    } else if (direction === 'Right') {
+        valueConnectLines.innerHTML += `<rect x="${lines[lines.length - 1][0]}" y="${lines[lines.length - 1][1] - 20}" width="160" height="40" rx="20" fill="hsl(${color[0]} ${color[1]}% ${color[2]}%)"/>`
+        valueConnectLines.innerHTML += `<text x="${lines[lines.length - 1][0] + 4}" y="${lines[lines.length - 1][1] + 4}" fill=
+    "Black" font-family="Source Code Pro" font-size="12 ">${tag}<text/>`
+    }
 }

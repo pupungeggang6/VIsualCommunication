@@ -6,22 +6,27 @@
     height: 20.9cm;
 }
 
-#Canvas3DGraph {
-    position: absolute;
-    border: 2px solid black;
-    width: 24cm;
-    height: 18cm;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.Canvas3DGraph {
+    width: 12cm;
+    height: 12cm;
 }
 
-#CanvasLineGraph {
+#Canvas3DGraphInsert {
     position: absolute;
-    border: 2px solid black;
-    width: 24cm;
-    height: 18cm;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 4cm;
+    top: 3cm;
+}
+
+#Canvas3DGraphDelete {
+    position: absolute;
+    right: 4cm;
+    top: 3cm;
+}
+
+#ValueConnectLines {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 29.7cm;
+    height: 21cm;
 }

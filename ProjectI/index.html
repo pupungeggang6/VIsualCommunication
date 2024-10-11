@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="main.css"/>
         <link rel="stylesheet" href="canvas3d.css"/>
         <link rel="stylesheet" href="textbox.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <script src="Const.js"></script>
@@ -12,10 +15,20 @@
         <script src="Draw.js"></script>
         <script src="Main.js"></script>
         <div id="Full">
-            <div id="DivCanvasGraph">
-                <canvas id="Canvas3DGraph" width="1600" height="1200"></canvas>
-                <svg id="CanvasLineGraph"></svg>
+            <div id="Title">
+                My Development Process
             </div>
+            <div id="DivCanvasGraph">
+                <div id="DivCanvasGraphTitle">
+                    <div id="DivCanvasGraphInsertTitle">
+                        Inserted Lines
+                    </div>
+                    <div id="DivCanvasGraphDeleteTitle">
+                        Deleted Lines
+                    </div>
+                </div>
+            </div>
+            <svg id="ValueConnectLines"></svg>
             <div id="DivFloatingText">
             </div>
             <div id="">

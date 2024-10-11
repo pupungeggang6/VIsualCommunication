@@ -1,28 +1,7 @@
 window.onload = main
-
-const dataLoadPromise = new Promise((resolve, reject) => {
-    try {
-        dataLoad()
-        resolve('Success')
-    } catch {
-        reject('Fail')
-    }
-})
+window.oncontextmenu = rightClick
 
 function main() {
-    dataLoadPromise.then(() => {
-        console.log('Hello')
-        canvas = document.querySelector('#Canvas3DGraph')
-        context = canvas.getContext('2d')
-        graphSVG = document.querySelector('#CanvasLineGraph')
-
-        requestAnimationFrame(draw3DGraph)
-    }).catch(() => {
-        console.log('Failed')
-    })
-}
-
-function dataLoad() {
     fetch('Data.csv').then((response) => {
         return response.text()
     }).then((csv) => {
@@ -40,6 +19,28 @@ function dataLoad() {
                 }
                 data[tempSplit[0]][keys[j]] = tempSplit[j]
             }
-        } 
+        }
+        console.log(data)
+    }).then(() => {
+        console.log('Hello')
+        valueConnectLines = document.querySelector('#ValueConnectLines')
+        window.addEventListener('mouseup', mouseUp, false)
+        requestAnimationFrame(draw3DGraph)
+    }).catch((error) => {
+        console.log(error)
     })
+}
+
+function mouseUp(event) {
+    let x = event.clientX
+    let y = event.clientY
+    let button = event.button
+
+    if (button === 2) {
+        alert(`${x}, ${y}`)
+    }
+}
+
+function rightClick() {
+    return false
 }

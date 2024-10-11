@@ -1,11 +1,17 @@
 const UI = {
-    firstGraphStart : [],
-    firstGraphRect : [
-        [[800, 200], [1500, 400], [1300, 600], [600, 400]],
-        [[1500, 400], [1300, 600], [1300, 620], [1500, 420]],
-        [[1300, 600], [600, 400], [600, 420], [1300, 620]],
+    graphStart : [40, 360],
+    graphBottomRect : [
+        [[160, 0], [720, 280], [560, 360], [0, 80]],
+        [[560, 360], [560, 380], [0, 100], [0, 80]],
+        [[560, 360], [560, 380], [720, 300], [720, 280]],
     ],
-    secondGraphStart : [],
+
+    barStart : [80, 0],
+    barIntervalColumn : [80, 40],
+    barIntervalRow : [-80, 40],
+    barMaxHeight : 480,
+
+    topFace : [[80, 4], [152, 40], [80, 76], [8, 40]],
 
     graph : {
         faceTop : [],
@@ -15,8 +21,10 @@ const UI = {
 }
 
 const color = {
-    insertedMin : 'hsl(120 100% 80%)',
-    insertedMax : 'hsl(120 100% 20%)',
-    deletedMin : 'hsl(0 100% 80%)',
-    deletedMax : 'hsl(0 100% 20%)',
+    insertedMin : [100, 75, 80],
+    insertedMax : [100, 75, 20],
+    deletedMin : [340, 75, 80],
+    deletedMax : [340, 75, 20],
 }
+
+const lineMax = 400

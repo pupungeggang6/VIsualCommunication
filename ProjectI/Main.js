@@ -25,6 +25,28 @@ function main() {
         console.log('Hello')
         valueConnectLines = document.querySelector('#ValueConnectLines')
         window.addEventListener('mouseup', mouseUp, false)
+
+        let sumInserted = 0
+        let sumDeleted = 0
+        let maxInserted = 0
+        let maxDeleted = 0
+        
+        for (const [key, value] of Object.entries(data)) {
+            sumInserted += value['Inserted']
+            sumDeleted += value['Deleted']
+
+            if (value['Inserted'] > maxInserted) {
+                maxInserted = value['Inserted']
+            }
+
+            if (value['Deleted'] > maxDeleted) {
+                maxDeleted = value['Deleted']
+            }
+        }
+        console.log(`${sumInserted},${sumDeleted}`)
+        mostInsertedPercentage = (maxInserted / sumInserted * 100).toFixed(1)
+        mostDeletedPercentage = (maxDeleted / sumDeleted * 100).toFixed(1)
+        
         requestAnimationFrame(draw3DGraph)
     }).catch((error) => {
         console.log(error)

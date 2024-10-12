@@ -28,7 +28,7 @@
     left: 0;
     top: 0;
     width: 29.7cm;
-    height: 21cm;
+    height: 20.9cm;
 }
 
 #DivCanvasGraphInsertTitle {
@@ -36,7 +36,7 @@
     left: 4cm;
     top: 15cm;
     width: 12cm;
-    height: 2cm;
+    height: 1cm;
 }
 
 #DivCanvasGraphDeleteTitle {
@@ -49,6 +49,6 @@
 
 .CanvasGraphTitle {
     font-family: "Source Code Pro";
-    font-size: 32px;
-    text-align: center;   
+    font-size: 28px;
+    text-align: center;
 }

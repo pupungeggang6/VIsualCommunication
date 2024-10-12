@@ -39,3 +39,79 @@
     font-family: 'Source Code Pro';
     font-size: 36px;
 }
+
+#Lower {
+    position: absolute;
+    left: 0cm;
+    top: 16cm;}
+
+#MostInsertedLines {
+    position: absolute;
+    left: 0cm;
+    top: 0cm;
+}
+
+#MostDeletedLines {
+    position: absolute;
+    left: 0cm;
+    top: 2.4cm;
+}
+
+.MostDate {
+    position: absolute;
+    left: 0.5cm;
+    top: 0cm;
+    width: 5cm;
+    height: 2.4cm;
+    font-family: 'Source Code Pro';
+    font-size: 24px;
+    line-height: 1.2cm;
+}
+
+.MostLine {
+    position: absolute;
+    left: 6cm;
+    top: 0cm;
+    width: 6cm;
+    height: 2.4cm;
+    font-family: 'Source Code Pro';
+    font-size: 24px;
+    line-height: 2.4cm;
+}
+
+.MostGraph {
+    position: absolute;
+    left: 11cm;
+    top: 0cm;
+    width: 12.8cm;
+    height: 2.4cm;
+    font-family: 'Source Code Pro';
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 2.4cm;
+}
+
+#MostInsertedGraph {
+    background: linear-gradient(to right, hsl(100 75% 40%) 13.5%, hsl(100 75% 0%) 13.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+#MostDeletedGraph {
+    background: linear-gradient(to right, hsl(340 75% 50%) 24.1%, hsl(100 75% 0%) 24.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.MostPercentage {
+    position: absolute;
+    left: 26cm;
+    top: 0cm;
+    width: 6cm;
+    height: 2.4cm;
+    font-family: 'Source Code Pro';
+    font-size: 36px;
+    line-height: 2.4cm;
+}

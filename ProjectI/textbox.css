@@ -20,9 +20,87 @@
 
 #DivSummary {
     position: absolute;
-    border: 2px solid black;
     right: 0.5cm;
     top: 0.5cm;
     width: 6cm;
-    height: 3cm;
+    height: 6cm;
+}
+
+#TitleRatio {
+    position: absolute;
+    top: 0cm;
+    left: 0cm;
+}
+
+#TextRatio1 {
+    position: absolute;
+    top: 0.5cm;
+    left: 0cm;
+}
+
+#TextRatio2 {
+    position: absolute;
+    top: 0.75cm;
+    left: 3cm;
+}
+
+#TitleInserted {
+    position: absolute;
+    top: 2cm;
+    left: 0cm;
+}
+
+#TextInserted1 {
+    position: absolute;
+    top: 2.5cm;
+    left: 0cm;
+}
+
+#TextInserted2 {
+    position: absolute;
+    top: 3.2cm;
+    left: 3cm;
+}
+
+#TitleDeleted {
+    position: absolute;
+    top: 4cm;
+    left: 0cm;
+}
+
+#TextDeleted1 {
+    position: absolute;
+    top: 4.5cm;
+    left: 0cm;
+}
+
+#TextDeleted2 {
+    position: absolute;
+    top: 5.2cm;
+    left: 3cm;
+}
+
+.SummaryTitle {
+    font-family: 'Source Code Pro';
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.SummaryNumber {
+    font-family: 'Source Code Pro';
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.SummaryNumber2 {
+    font-family: 'Source Code Pro';
+    font-size: 16px;
+}
+
+.TextGreen {
+    color: hsl(100 75% 40%);
+}
+
+.TextRed {
+    color: hsl(340 75% 50%);
 }

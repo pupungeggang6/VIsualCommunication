@@ -1,15 +1,14 @@
 @media print {
     @page {
-        size: 29.7cm 20.9cm;
+        size: 29.7cm 21cm;
         margin: 0;
-        padding: 0;
     }
 
     body {
         left: 0cm;
         top: 0cm;
         width: 29.7cm;
-        height: 20.9cm;
+        height: 21cm;
         margin-left: 0;
         margin-top: 0;
         padding-left: 0;
@@ -27,7 +26,7 @@
     left: 0cm;
     top: 0cm;
     width: 29.7cm;
-    height: 20.9cm;
+    height: 21cm;
     background-color: #FFFFFF;
 }
 
@@ -82,7 +81,7 @@
     position: absolute;
     left: 11cm;
     top: 0cm;
-    width: 12.8cm;
+    width: 13cm;
     height: 2.4cm;
     font-family: 'Source Code Pro';
     font-size: 80px;

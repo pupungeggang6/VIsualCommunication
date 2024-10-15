@@ -21,8 +21,10 @@ const UI = {
 
     textBox : {
         size : [200, 45],
-        
-    }
+    },
+
+    upperGraph : [0, 60],
+    lowerGraph : [0, 180]
 }
 
 const color = {

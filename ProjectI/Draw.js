@@ -9,6 +9,8 @@ function draw3DGraph() {
     drawBox([[269, 305], [265, 301], [221, 301]], [100, 75, 80], 'Left', '09/23<br>53 Lines')
     drawBox([[815, 435], [810, 430], [902, 430]], [340, 75, 90], 'Right', '10/05<br>62 Lines')
     drawBox([[634, 339], [672, 301], [792, 301]], [340, 75, 90], 'Right', '09/23<br>0 Lines')
+
+    drawInsertDelete()
 }
 
 function drawGraph(id, aspect, colorMin, colorMax) {
@@ -107,4 +109,28 @@ function drawBox(lines, color, direction, tag) {
     }
 
     document.querySelector('#DivFloatingText').appendChild(textBox)
+}
+
+function drawInsertDelete() {
+    let canvas = document.querySelector('#MostGraph')
+    let context = canvas.getContext('2d')
+    let gra = context.createLinearGradient(0,0,600,1)
+
+    context.font = 'bold 72px Source Code Pro'
+    context.textBaseline = 'middle'
+    
+    context.fillStyle = gra
+    gra.addColorStop(0, 'hsl(100 75% 40%)')
+    gra.addColorStop(0.135, 'hsl(100 75% 40%)')
+    gra.addColorStop(0.135, 'black')
+    gra.addColorStop(1, 'black')
+    context.fillText('+++++++++++++', UI.upperGraph[0], UI.upperGraph[1])
+
+    gra = context.createLinearGradient(0,0,600,1)
+    context.fillStyle = gra
+    gra.addColorStop(0, 'hsl(340 75% 50%)')
+    gra.addColorStop(0.241, 'hsl(340 75% 50%)')
+    gra.addColorStop(0.241, 'black')
+    gra.addColorStop(1, 'black')
+    context.fillText('-------------', UI.lowerGraph[0], UI.lowerGraph[1])
 }

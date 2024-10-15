@@ -89,16 +89,12 @@
     line-height: 2.4cm;
 }
 
-#MostInsertedGraph {
-    background: linear-gradient(to right, hsl(100 75% 40%) 13.5%, hsl(100 75% 0%) 13.5%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#MostDeletedGraph {
-    background: linear-gradient(to right, hsl(340 75% 50%) 24.1%, hsl(100 75% 0%) 24.1%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+#MostGraph {
+    position: absolute;
+    left: 11cm;
+    top: 0cm;
+    width: 12cm;
+    height: 4.8cm;
 }
 
 .MostPercentage {

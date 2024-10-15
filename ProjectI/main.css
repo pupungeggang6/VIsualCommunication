@@ -91,19 +91,15 @@
 }
 
 #MostInsertedGraph {
-    border: 0px;
     background: linear-gradient(to right, hsl(100 75% 40%) 13.5%, hsl(100 75% 0%) 13.5%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent;
 }
 
 #MostDeletedGraph {
-    border: 0px;
     background: linear-gradient(to right, hsl(340 75% 50%) 24.1%, hsl(100 75% 0%) 24.1%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent;
 }
 
 .MostPercentage {

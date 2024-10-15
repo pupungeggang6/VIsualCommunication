@@ -20,7 +20,7 @@
 
 #DivSummary {
     position: absolute;
-    right: 0.5cm;
+    right: 20px;
     top: 0.5cm;
     width: 6cm;
     height: 6cm;
@@ -40,6 +40,7 @@
 
 #TextRatio2 {
     position: absolute;
+    text-align: right;
     top: 0.6cm;
     left: 3cm;
 }
@@ -58,8 +59,10 @@
 
 #TextInserted2 {
     position: absolute;
+    text-align: right;
     top: 3.1cm;
     left: 3cm;
+    width: 3cm;
 }
 
 #TitleDeleted {
@@ -76,8 +79,10 @@
 
 #TextDeleted2 {
     position: absolute;
+    text-align: right;
     top: 5.1cm;
     left: 3cm;
+    width: 3cm;
 }
 
 .SummaryTitle {

@@ -32,7 +32,7 @@
 
 #Title {
     position: absolute;
-    left: 1cm;
+    left: 20px;
     top: 0.5cm;
     font-family: 'Source Code Pro';
     font-size: 36px;
@@ -81,10 +81,10 @@
     position: absolute;
     left: 11cm;
     top: 0cm;
-    width: 13cm;
+    width: 12cm;
     height: 2.4cm;
     font-family: 'Source Code Pro';
-    font-size: 80px;
+    font-size: 72px;
     font-weight: 700;
     line-height: 2.4cm;
 }
